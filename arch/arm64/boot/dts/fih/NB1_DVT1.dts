@@ -24,4 +24,8 @@
 	compatible = "qcom,msm8998-mtp", "qcom,msm8998", "qcom,mtp";
 	qcom,board-id = <8 0>, <1 0>;
 	fih,hw-id = <1 4 0>;
+
+	&usb3_dwc3 {
+		dr_mode = "peripheral"; /* Force to peripheral until we have Type-C hooked up */
+	};
 };
